@@ -1,0 +1,105 @@
+nav  {
+  width: 750pt;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 40pt;
+  align-items: center;
+  background-color: teal;
+  color: azure;
+}
+
+body  {
+  width: 750pt;
+  margin: auto;
+}
+
+header  {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  font-family: 'Oswald', sans-serif
+}
+
+h1  {
+  font-size: 70pt;
+  border-bottom: 5pt black solid;
+  margin-left: 40pt;
+  margin-right: 70pt;
+  font-family: 'Oswald', sans-serif;
+}
+
+.description  {
+  padding-left: 40pt ;
+}
+
+img  {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.profession  {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0pt;
+  background-color: yellow;
+}
+
+main  {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 100%;
+}
+
+aside  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  }
+
+.contact  {
+  border: black;
+  border-bottom: black 5pt solid;
+  padding-top: 30pt;
+  margin-bottom: 70pt;
+  margin-left: 40pt;
+  margin-right: 40pt;
+  font-family: 'Oswald', sans-serif
+}
+
+div  {
+  padding-left: 20pt;
+}
+
+.fa-fa-phone-square  {
+  font;
+}
+ 
+.detail  {
+padding-bottom: 20pt;
+margin-top: 0;
+font-family: 'Oswald', sans-serif
+}
+
+.head-title  {
+  border-bottom: 2pt solid black;
+  font-family: 'Oswald', sans-serif
+}
+
+.sub-title  {
+  border-bottom: solid 1pt black;
+  margin-right: 300pt;
+  font-family: 'Merriweather', serif;
+  font-size: 12pt;
+}
+
+p, li, ul  {
+  font-family: 'Merriweather', serif;
+  font-size: 10pt;
+}
+
+.name-container  {
+  background-color: tomato;
+}
