@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <section class="navigation">
+        <a href="index.html">home</a><a href="about.html">about me</a>
+      </section>
+      <section>
+        <img class=aca-logo src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
+      </section>
+      <section class="navigation">
+        <a href="resume2.html">resume</a><a href="contact.html">contact me</a>
+      </section>
+    </nav>  
+  </header>
+  <main>
+    <section class="title" >
+      <h1>contact me</h1>
+      <h2>It would be awesome to hear from you!</h2>
+    </section>
+    <section class="content">
+      <form action="results.html" method="GET">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="name" required>
+        </div>
+        <div>  
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="cyber name">
+        </div>
+        <!-- <div>
+          <label for="age">age</label>
+          <input type="number" name="age" id="age" min="3" max="140" placeholder="how old are you">
+        </div> -->
+        <!-- <div>
+          <label for="date">birthdate</label>
+          <input type="date" name="date" id="date" placeholder="birthday" min="01/01/1900">
+        </div> -->
+        <div>
+          <label for="referal">How'd you hear about me?</label>
+          <select>
+            <option value="How'd you hear about me?" disabled selected></option>
+            <option label="resume" value="resume">resume</option>
+            <option label="email" value="email">email</option>
+            <option label="friend" value="friend of a friend">friend of a friend</option>
+            <option label="referal" value="ACA referal">ACA referal</option>
+            <option label="linkedin" value="LinkIn">LinkedIn</option> 
+            <option label="other" value="other">other</option>
+          </select>
+        </div>
+        <div>
+          <div>
+            Would like to be contacted back?  
+          </div>
+          <div class="radio">
+            <label for="yes">yes</label>
+            <input type="radio" name="yes">
+            <label for="no">no</label>
+            <input type="radio" name="no">
+          </div>
+        </div>
+        <div>
+          <label for="Question or Comments">Question or Comments?</label>
+          <textarea id="questions or comments" name="questions or comments" min="5" max="500"></textarea>
+        </div>
+        <!-- <div>
+          <label for="password">password</label>
+          <input type="password" name="password" id="password" placeholder="password" required>
+        </div> -->
+        
+        <button type="reset"> reset</button>
+        <button type="submit">submit</button>
+      </form>
+    </section>
+    <section class="icons">
+      <i class="fa fa-phone-square fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+    </section>
+  </main>
+</body>
+</html>

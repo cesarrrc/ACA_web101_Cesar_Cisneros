@@ -97,7 +97,8 @@ div.circle  {
   width: 500pt;
   height: 500pt;
   border-radius: 50%;
-  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);    position: absolute;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);    
+  position: absolute;
   z-index: -1;
   margin-left: 400pt;
   margin-top: 100pt;
