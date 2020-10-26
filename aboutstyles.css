@@ -3,6 +3,7 @@ body  {
   background-color: #93c8c4;
   position: relative;
   z-index: -2;
+  overflow-x: hidden;
 }
 
 header  {
@@ -66,13 +67,13 @@ h1  {
 
 h2  {
   font-size: 18pt;
-  padding-left: 80pt;
+  /* padding-left: 80pt; */
   font-family: 'Merriweather', serif;
   color: #de41cd;
   }
 
 p  {
-  padding-left: 80pt;
+  /* padding-left: 80pt; */
   font-family: 'Merriweather', serif;
   color: #0b4abd;
   letter-spacing: 1pt;
@@ -83,8 +84,13 @@ section  {
   display: flex;
   align-items: flex-end;
   height: 100%; 
-  width: 500px;
+  width: 100%;
 
+
+}
+
+section>img  {
+  width: 500px;
 }
 
 div.circle  {
@@ -93,15 +99,18 @@ div.circle  {
   border-radius: 50%;
   background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);    position: absolute;
   z-index: -1;
-  margin-left: 300pt;
-  margin-top: 200pt;
+  margin-left: 400pt;
+  margin-top: 100pt;
+
   
 }
 
 footer  {
-    width: 50% auto;
-    height: 50pt;
-    background-color: #b16eb5 ;
+  height: 100pt;
+  /* padding: 0; */
+  width: auto; 
+  margin: auto;
+  background-color: #b16eb5 ;
 }
 
 @media (max-width: 840px)  {
@@ -132,7 +141,7 @@ footer  {
   main  {
     width: 375px;
     display: grid;
-    grid-template-rows: 50% 50;
+    grid-template-rows: auto auto;
     grid-template-columns: 100%;
   }
 
@@ -161,16 +170,21 @@ footer  {
 
   section  {
     width: 375px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section>img  {
+    width: 300px;
   }
 
   div.circle  {
   width: 350px;
   height: 350px;
-  margin-left: 0px;
-  margin-top: 0px;
-  align-self: flex-end;
-  justify-self: center;
+  margin-left: 10pt;
+  margin-top: 800pt;
   
   }
 }
