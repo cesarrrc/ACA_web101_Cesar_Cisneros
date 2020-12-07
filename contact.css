@@ -8,47 +8,45 @@ body  {
 
 header  {
   margin: auto;
-  width: auto;
-  min-width: 800px;
   height: auto;
-  background-color: #b16eb5 ;
-
-  
+  background-color: #b16eb5 ;  
 }
 
-nav  {
+.head-nav  {
   display: grid;
   grid-template-columns: 40% 20% 40%;
   margin: auto;
-  width: 800px;
   height: auto;
   align-items: center;
   font-family: 'Merriweather', serif;
 
 
 }
-
-.aca-logo  {
-  height: 60pt;
+.image-box  {
+  height: 80px;
 }
 
-a  {
+.aca-logo  {
+  height: 180%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+.navigation a  {
   border: 1pt rgb(240, 13, 183) solid;
   border-radius: 10%;
   background-color:  rgb(147, 200, 196);
   padding: 4pt;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
 }
 
 section  {
   text-align: center;
   margin: auto;
 }
-
-section.title  {
-  font-family: 'Oswald', sans-serif;
-
-}
-
 
 nav>section  {
   display: flex;
@@ -57,18 +55,21 @@ nav>section  {
   margin: auto;
 }
 
+
 h1  {
-  font-size: 75pt;
+  font-size: 110px;
   border-bottom: black solid 3pt;
   margin: auto 100pt;
-  color: #072c94 
+  color: #072c94;
+  font-family: 'Oswald', sans-serif;
 
 }
 
 h2  {
-  font-size: 16pt;
+  font-size: 40px;
   color: #de41cd;
-
+  padding-bottom: 40px;
+  font-family: 'Merriweather', serif;
 }
 
 
@@ -78,6 +79,8 @@ main  {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
   
 }
 
@@ -117,57 +120,156 @@ form>div  {
 form  {
   border: 2pt solid black;
   border-radius: 2%;
-  padding-top: 20pt;
-  padding-bottom: 20pt;
+  padding-top: 40pt;
+  padding-bottom: 40pt;
   width: 400pt;
   background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
   font-family: 'Merriweather', serif;
   font-size: 10pt;
 }
-.icons  {
+
+.content label {
+  font-size: 24px;
+}
+
+.contact-back  {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+button  {
+  font-size: 24px;
+}
+
+.icons-contact  {
   margin: 20pt auto auto auto;
   width: 200pt;
   display: flex;
   justify-content: space-evenly;
+  padding-top: 40px;
 }
+
+.icons-contact a  {
+  text-decoration: none;
+  color: black;
+}
+
+footer  {
+  background-color: #b16eb5 ;
+  margin: auto;
+}
+
+.foot-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.foot-nav  {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+
+.foot-nav a  {
+  border: 1pt rgb(240, 13, 183) solid;
+  border-radius: 10%;
+  background-color:  rgb(147, 200, 196);
+  padding: 2pt;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+h3  {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+
+.foot-logo  {
+  height: 40px;
+}
+
+.aca-logo-foot  {
+  height: 180%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+
+}
+
+.foot-img  {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+
+}
+
+.follow-us  {
+  color: black;
+  margin-top: 0;
+}
+
+.icons  {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.follow-us a  {
+  text-decoration: none;
+  color: black;
+}
+
 
 @media (max-width: 840px)  {
-  body  {
-    width: 375px auto;
-    margin: 0 auto;
-  }
-
+ 
 header  {
-width: 375px;
+  margin: auto;
+  height: auto;
+  background-color: #b16eb5 ;
+  }
+  
+.head-nav  {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50%;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+  }
 
+.head-nav a  {
+  font-size: 16px;
 }
-  
-
-  nav  {
-    
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 50% 50%;
-    width: 375px;
-    height: 60pt;
-    margin: auto 0;
-    font-size: 12pt;
-  
-  }
-
-  .aca-logo  {
-    width: 85%;
-    height: 85%;
-    justify-content: center;
-    align-items: center;
-  }
 
 main  {
-  width: 375px;
-
+  width: auto;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 section.title  {
   width: 375px;
+  margin: auto;
 }
 
 h1  {

@@ -1,109 +1,290 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: auto;
+body  {
+  margin: auto;
+  height: auto;
+  background-color: #93c8c4;
+
+}
+
+header  {
+  margin: auto;
+  height: auto;
+  background-color: #b16eb5 ;  
+}
+
+.head-nav  {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+
+
+}
+.image-box  {
+  height: 80px;
+}
+
+.aca-logo  {
+  height: 180%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+.navigation a  {
+  border: 1pt rgb(240, 13, 183) solid;
+  border-radius: 10%;
+  background-color:  rgb(147, 200, 196);
+  padding: 4pt;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+section  {
+  text-align: center;
+  margin: auto;
+}
+
+nav>section  {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+}
+
+main  {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+h1  {
+  font-size: 110px;
+  border-bottom: black solid 3pt;
+  width: 530px;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  color: #072c94;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+h2  {
+  font-size: 30px;
+  text-align: center;
+  color: #de41cd;
+  font-family: 'Merriweather', serif;
+}
+
+
+.portfolio-button  {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-button a  {
+  text-decoration: none;
+  color: #072c94;
+  border: black solid 1px;
+  border-radius: 15%;
+  padding: 10px;
+  padding-bottom: 20px;
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1pt;
+  background-color: #b16eb5;
+}
+
+.image-gallery  {
+  padding-bottom: 60px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.image-gallery .box  {
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  background-image: url(coder.jpg);
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.box img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor:pointer;
+  transition: 2s ease-in-out;
+}
+
+.box:hover img  {
+  transform: scale(1.5);
+}
+
+.box .text  {
+  opacity: 0;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  font-size: 20px;
+  pointer-events: none;
+  z-index: 4;
+  transition: 1s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.671);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Arimo', sans-serif;
+  align-items: center;
+  text-align: center;
+}
+
+.box:hover .text {
+  opacity: 1;
+}
+
+
+footer  {
+  background-color: #b16eb5 ;
+  margin: auto;
+}
+
+.foot-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.foot-nav  {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.foot-nav a  {
+  border: 1pt rgb(240, 13, 183) solid;
+  border-radius: 10%;
+  background-color:  rgb(147, 200, 196);
+  padding: 2pt;
+  text-decoration: none;
+  color: black;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+h3  {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  font-weight: 100;
+  /* margin-top: 0; */
+  margin-bottom: 0;
+}
+
+
+.foot-logo  {
+  height: 40px;
+}
+
+.aca-logo-foot  {
+  height: 180%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+
+}
+
+.foot-img  {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+
+}
+
+.follow-us  {
+  color: black;
+  margin-top: 0;
+}
+
+.icons  {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.follow-us a  {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (max-width: 840px)  {
+
+  header  {
+    margin: auto;
     height: auto;
-    text-align: center;
+    background-color: #b16eb5 ;
+  
+    
   }
   
-  /* What kind of selector is this? */
-  .logo {
-    width: 100px;
-    height: 100px;
-    margin: 3% 10%;
-  }
-
-  header {
+  .head-nav  {
     display: grid;
-    grid-template-columns: 0% 100%;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-  }
-
-  main {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-  }
-
-  /* This is an element within an element selector */ 
-  nav > a {
-    margin: 3% 1% 5%;
-    height: auto;
-    width: auto;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 0px;
-    background: transparent;
-    padding: 10px;
-    text-align: center;
-    border: 2px solid rgb(172, 40, 40);
-  }
-
-  .has-border {
-    border-radius: 0px;
-    border: 2px solid #0795C3;
-    background: none;
-    padding: 0px;
-    text-align: center
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-right: 0%;
-  }
-  /* This is an ID selector */
-  #profile-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 15% auto;
-    grid-column: 2/3;
-  }
-
-  h1 {
-    color:rgb(0, 0, 0);
-    grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 2px solid #1940A9;
-    font-style: bold;
-    font-size: 45px;
-    text-align: center;
-  }
-
-  h2 {
-    grid-column: 2/3;
-    margin: 3% auto;
-    font-style: italic;
-  }
-
-  .small-text {
-    grid-column: 2/3;
-    color: rgb(0, 0, 0);
-    font-size: 10px;
-    margin: 3% auto;
-  }
-
-  button {
-    grid-column: 2/3;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50%;
     margin: auto;
-    width: auto%;
     height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 20px;
-    background: grey;
-    padding: 5px;
-    padding-bottom: 0%;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    letter-spacing: 16px;
-    font-style: italic;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+  
+  
   }
+
+ 
+  .head-nav a  {
+    font-size: 16px;
+
+  }
+
+  main  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1  {
+    font-size: 60px;
+    width: 275px;
+    padding-top: 0;
+  }
+
+  h2  {
+    font-size: 18px;
+  }
+
+  .image-gallery .box  {
+    width: 300px;
+  }
+
+  .portfolio-button a  {
+    font-size: 40px;
+  }
+}

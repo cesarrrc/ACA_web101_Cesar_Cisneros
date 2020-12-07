@@ -1,4 +1,319 @@
-nav  {
+
+body  {
+  margin: auto;
+  height: auto;
+  background-color: #93c8c4;
+
+}
+
+header  {
+  margin: auto;
+  height: auto;
+  background-color: #b16eb5 ;  
+}
+
+.head-nav  {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+
+
+}
+.image-box  {
+  height: 80px;
+}
+
+.aca-logo  {
+  height: 180%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+.navigation a  {
+  border: 1pt rgb(240, 13, 183) solid;
+  border-radius: 10%;
+  background-color:  rgb(147, 200, 196);
+  padding: 4pt;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+section  {
+  text-align: center;
+  margin: auto;
+}
+
+nav>section  {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+}
+
+main  {
+  margin: auto;
+}
+
+.top  {
+  display: flex;
+  background-color: white;
+
+}
+
+.resume-image img  {
+  width: 300px;
+}
+
+
+.profession  {
+  background-color: yellow;
+  margin-top: 0;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+
+.resume-name  {
+  font-size: 64px;
+  border-bottom: solid 1px black;
+  width: 500px;
+  margin: auto;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 40px;
+
+}
+
+.description  {
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px; 
+}
+
+.body  {
+  display: flex;
+  margin: auto;
+
+}
+
+.contact-container  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center;
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  }
+
+.contact  {
+  border: black;
+  padding-top: 30px;
+  font-family: 'Oswald', sans-serif;
+  width: 300px;
+  padding-bottom: 60px;
+}
+
+.detail  {
+  padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.exp-container  {
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.head-title  {
+  border-bottom: 4px solid black;
+  font-family: 'Oswald', sans-serif;
+  width: 300px;
+  margin: auto;
+}
+
+.sub-title  {
+  border-bottom: solid 1pt black;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+p, li, ul  {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+footer  {
+  background-color: #b16eb5 ;
+  margin: auto;
+}
+
+.foot-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.foot-nav  {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.foot-nav a  {
+  border: 1pt rgb(240, 13, 183) solid;
+  border-radius: 10%;
+  background-color:  rgb(147, 200, 196);
+  padding: 2pt;
+  text-decoration: none;
+  color: black;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+h3  {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  font-weight: 100;
+  /* margin-top: 0; */
+  margin-bottom: 0;
+}
+
+
+.foot-logo  {
+  height: 40px;
+}
+
+.aca-logo-foot  {
+  height: 180%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+
+}
+
+.foot-img  {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+
+}
+
+.follow-us  {
+  color: black;
+  margin-top: 0;
+}
+
+.icons  {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.follow-us a  {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (max-width: 840px)  {
+
+  header  {
+    margin: auto;
+    height: auto;
+    background-color: #b16eb5 ;
+  
+    
+  }
+  
+  .head-nav  {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50%;
+    margin: auto;
+    height: auto;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+  
+  
+  }
+  
+  .head-nav a  {
+    font-size: 16px;
+
+  }
+
+  .top  {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .resume-name  {
+    font-size: 50px;
+    width: 300px;
+  }
+
+  .description  {
+    font-size: 14px;
+  }
+
+  .body  {
+    flex-direction: column-reverse;
+  }
+
+  .detail-container  {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    padding-bottom: 50px;
+
+  }
+
+  .detail  {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-container  {
+    margin: 0;
+    
+  }
+  .contact  {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+
+}
+
+/* nav  {
   width: 750pt;
   display: flex;
   text-align: center;
@@ -12,12 +327,14 @@ nav  {
 body  {
   width: 750pt;
   margin: auto;
-}
+} */
 
-header  {
+/* .top  {
   display: grid;
   grid-template-columns: 30% 70%;
-  font-family: 'Oswald', sans-serif
+  font-family: 'Oswald', sans-serif;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 h1  {
@@ -69,13 +386,7 @@ aside  {
   font-family: 'Oswald', sans-serif
 }
 
-div  {
-  padding-left: 20pt;
-}
 
-.fa-fa-phone-square  {
-  font;
-}
  
 .detail  {
 padding-bottom: 20pt;
@@ -102,4 +413,4 @@ p, li, ul  {
 
 .name-container  {
   background-color: tomato;
-}
+} */
